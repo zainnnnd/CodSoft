@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Admin Panel</title>
+    <link rel="stylesheet" href="shop-admin.css">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="form-container">
+            <h2>Shop Registration/Login</h2>
+            <form id="shopAuthForm">
+                <div class="form-group">
+                    <label for="shopName">Shop Name:</label>
+                    <input type="text" id="shopName" name="shopName" required>
+                </div>
+                <div class="form-group">
+                    <label for="shopEmail">Email:</label>
+                    <input type="email" id="shopEmail" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="shopPassword">Password:</label>
+                    <input type="password" id="shopPassword" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="shopAction">Action:</label>
+                    <select id="shopAction" name="action" required>
+                        <option value="register">Register</option>
+                        <option value="login">Login</option>
+                    </select>
+                </div>
+                <div class="form-actions">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="shop-admin.js"></script>
+</body>
+</html>

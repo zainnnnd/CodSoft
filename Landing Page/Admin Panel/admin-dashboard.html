@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="admin-dashboard.css">
+</head>
+<body>
+    <div id="adminPanel" class="admin-panel">
+        <header>
+            <h1>Admin Dashboard</h1>
+            <button id="logoutButton">Logout</button>
+        </header>
+        <div class="container">
+            <div class="panel shops-panel">
+                <h2>Shops</h2>
+                <table id="shopsTable">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Shops data will be dynamically inserted here -->
+                    </tbody>
+                </table>
+                <button id="addShopButton">Add Shop</button>
+            </div>
+            <div class="panel users-panel">
+                <h2>Users</h2>
+                <table id="usersTable">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Users data will be dynamically inserted here -->
+                    </tbody>
+                </table>
+                <button id="addUserButton">Add User</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Adding/Editing Shop -->
+    <div id="shopModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeShopModal">&times;</span>
+            <h2 id="shopModalTitle">Add Shop</h2>
+            <form id="shopForm">
+                <input type="hidden" id="shopId">
+                <label for="shopName">Name:</label>
+                <input type="text" id="shopName" required>
+                <label for="shopEmail">Email:</label>
+                <input type="email" id="shopEmail" required>
+                <label for="shopPassword">Password:</label>
+                <input type="password" id="shopPassword" required>
+                <button type="submit">Save</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal for Adding/Editing User -->
+    <div id="userModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeUserModal">&times;</span>
+            <h2 id="userModalTitle">Add User</h2>
+            <form id="userForm">
+                <input type="hidden" id="userId">
+                <label for="userName">Name:</label>
+                <input type="text" id="userName" required>
+                <label for="userEmail">Email:</label>
+                <input type="email" id="userEmail" required>
+                <label for="userPassword">Password:</label>
+                <input type="password" id="userPassword" required>
+                <button type="submit">Save</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="admin-dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,223 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f9fa;
+}
+
+/* Header Styles */
+header {
+    background-color: #bdd3eb;
+    color: #333;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 1.9rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #006400;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    color: #006400;
+}
+
+/* Authentication Section */
+.authentication {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.auth-form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.auth-form h2 {
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.auth-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.auth-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.auth-form input[type="text"],
+.auth-form input[type="email"],
+.auth-form input[type="password"] {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    font-size: 1rem;
+}
+
+.auth-form input[type="text"]:focus,
+.auth-form input[type="email"]:focus,
+.auth-form input[type="password"]:focus {
+    border-color: #006400;
+    box-shadow: 0 0 5px rgba(0, 100, 0, 0.3);
+    outline: none;
+}
+
+.auth-form .form-actions {
+    text-align: center;
+}
+
+.auth-form button {
+    background-color: #006400;
+    color: white;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.auth-form button:hover {
+    background-color: #004d00;
+    transform: scale(1.05);
+}
+
+/* Order Form Section */
+.order-form {
+    padding: 2rem;
+    background-color: #e6f7e6;
+    text-align: center;
+}
+
+.order-form h2 {
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.order-form form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.order-form .form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.order-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.order-form input[type="text"],
+.order-form input[type="email"],
+.order-form textarea,
+.order-form select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    font-size: 1rem;
+}
+
+.order-form input[type="text"]:focus,
+.order-form input[type="email"]:focus,
+.order-form textarea:focus,
+.order-form select:focus {
+    border-color: #006400;
+    box-shadow: 0 0 5px rgba(0, 100, 0, 0.3);
+    outline: none;
+}
+
+.order-form textarea {
+    resize: vertical;
+}
+
+.order-form .form-actions {
+    text-align: center;
+}
+
+.order-form button {
+    background-color: #006400;
+    color: white;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.order-form button:hover {
+    background-color: #004d00;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #bdd3eb;
+    color: #333;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.footer-links {
+    margin-bottom: 1rem;
+}
+
+.footer-links a {
+    color: #333;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #006400;
+}

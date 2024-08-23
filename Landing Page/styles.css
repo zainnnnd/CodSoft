@@ -1,0 +1,380 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f9fa; /* Light Gray Background */
+}
+
+header {
+    background-color: #bdd3eb; /* Light Green */
+    color: #333; /* Dark Text Color for Contrast */
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 1.9rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #006400; /* Dark Green */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #333; /* Dark Text Color */
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    color: #006400; /* Dark Green */
+}
+
+.hero {
+    background: url('truck.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-color: #242c86; /* Sky Blue */
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    animation: fadeInDown 1.5s ease-out;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.hero .cta {
+    background-color: #bfc4ee; /* Green */
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.hero .cta:hover {
+    background-color: #7c86e2; /* Darker Green */
+    transform: scale(1.05);
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    background-color: #e0f7fa; /* Light Blue */
+}
+
+.feature {
+    flex: 1;
+    margin: 0 1rem;
+    text-align: center;
+}
+
+.feature img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.feature h2 {
+    margin-top: 1rem;
+    color: #333;
+}
+
+.feature p {
+    color: #666;
+}
+
+.how-it-works {
+    background-color: #e6f7e6; /* Light Green */
+    padding: 2rem;
+    text-align: center;
+}
+
+.how-it-works h2 {
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.step {
+    flex: 1;
+    margin: 1rem;
+    max-width: 300px;
+    text-align: center;
+}
+
+.step img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.step h3 {
+    margin-top: 1rem;
+    color: #333;
+}
+
+.step p {
+    color: #666;
+}
+
+/* Form Container */
+form {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #f0f4f8; /* Light background color */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    animation: fadeInUp 1s ease-out; /* Fade-in animation */
+    text-align: center; /* Center align all elements inside the form */
+}
+
+/* Form Elements */
+form h2 {
+    margin-bottom: 1.5rem;
+    color: #333; /* Dark text color */
+    text-align: center; /* Center align heading */
+}
+.order-form h2{
+    text-align: center;
+    font-size: 1.9rem;
+}
+
+form .form-group {
+    margin-bottom: 1.5rem;
+    text-align: left; /* Align form group text to the left */
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555; /* Medium text color */
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc; /* Light border color */
+    border-radius: 5px;
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for focus */
+    font-size: 1rem;
+    font-family: 'Arial', sans-serif;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="password"]:focus,
+form textarea:focus,
+form select:focus {
+    border-color: #006400; /* Dark Green border on focus */
+    box-shadow: 0 0 5px rgba(0, 100, 0, 0.3); /* Green shadow on focus */
+    outline: none; /* Remove default outline */
+}
+
+form textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+form .form-actions {
+    text-align: center; /* Center align submit button */
+}
+
+form button {
+    background-color: #006400; /* Dark Green button */
+    color: white;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+form button:hover {
+    background-color: #004d00; /* Darker Green on hover */
+    transform: scale(1.05); /* Slightly larger on hover */
+}
+
+/* Testimonials */
+.testimonials {
+    background-color: #f8f9fa; /* Light Gray */
+    padding: 2rem;
+    text-align: center;
+}
+
+.testimonials h2 {
+    margin-bottom: 2rem;
+    color: #333;
+    animation: fadeInUp 1s ease-out; /* Animation for heading */
+}
+
+.testimonial {
+    margin-bottom: 1.5rem;
+    font-style: italic;
+    color: #555;
+    opacity: 0;
+    animation: fadeInSlide 1s ease-out forwards;
+}
+
+.testimonial:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.testimonial:nth-child(3) {
+    animation-delay: 1s;
+}
+
+.map{
+    text-align: center;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInSlide {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Apply the animation on hover to make it more interactive */
+.testimonial:hover {
+    animation: scaleUp 0.5s ease-out forwards;
+}
+
+footer {
+    background-color: #bdd3eb; /* Light Green */
+    color: #333; /* Dark Text Color */
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.footer-links {
+    margin-bottom: 1rem;
+}
+
+.footer-links a {
+    color: #333; /* Dark Text Color */
+    margin: 0 0.5rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #006400; /* Dark Green */
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .features, .steps {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 0.5rem;
+    }
+
+    .feature, .step {
+        margin: 1rem 0;
+    }
+}
+
+
+
+
+
